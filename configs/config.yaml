@@ -1,0 +1,9 @@
+hydra:
+  run:
+    dir: "${oc.env:HYDRA_OUTPUT_DIR,.}/results/task_${task.env_name}/algo-${algo.algo_name}${cond_weight_fit:${algo.weight_fitness_obj}}${cond_proba_fit:${algo.use_proba_fit}}/${now:%Y-%m-%d_%H-%M-%S}_seed-${task.seed}/"
+
+task: ???
+
+algo: ???
+
+debug_mode: false

@@ -1,0 +1,41 @@
+env_name: "arm"
+
+seed: ???
+
+# Robustness Optimisation parameters
+aria:
+  batch_size: 2048
+  number_parallel_optimisations: 1
+  number_robust_iterations_initial: 1000
+  number_robust_iterations_loop: 100
+  perturbation_std: 0.005
+
+  # Number reevals to estimate mean bd
+  num_reevals_estimate_mean_initial: 2048
+
+  learning_rate: 1e-2
+
+normaliser:
+  min_fitness: -1.
+  max_fitness: 0.
+  min_distance: 0.
+  max_distance: 1.
+
+variation_fn:
+  iso_sigma: 0.01
+  line_sigma: 0.1
+
+budget_per_eval: 4096
+reeval:
+  evals_per_gen: 32
+
+grid_shape: [32, 32]
+min_params: null
+max_params: null
+min_bd: 0.
+max_bd: 1.
+
+# Arm Task parameters
+size_arm: 8
+std_fitness: 0.01
+std_descriptor: 0.01

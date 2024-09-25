@@ -1,0 +1,38 @@
+env_name: "walker2d_uni"
+
+seed: ???
+is_reset_based: true
+
+# Robustness Optimisation parameters
+aria:
+  batch_size: 1440
+  number_parallel_optimisations: 1
+  number_robust_iterations_initial: 800
+  number_robust_iterations_loop: 75
+  perturbation_std: 0.01
+
+  # Number reevals to estimate mean bd
+  num_reevals_estimate_mean_initial: 2048
+
+  learning_rate: 0.01
+
+normaliser:
+  min_fitness: 0.
+  max_fitness: 3000.
+  min_distance: 0.
+  max_distance: 1.
+
+variation_fn:
+  iso_sigma: 0.01
+  line_sigma: 0.1
+
+budget_per_eval: 4096
+reeval:
+  evals_per_gen: 32
+
+grid_shape: [32, 32]
+min_params: null
+max_params: null
+min_bd: 0.
+max_bd: 1.
+episode_length: 1000

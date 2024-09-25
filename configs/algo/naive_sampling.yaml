@@ -1,0 +1,9 @@
+algo_name: "naive_sampling"
+
+log_every: 100
+
+use_single_init_genotype: false
+
+weight_fitness_obj: ???
+
+use_proba_fit: false

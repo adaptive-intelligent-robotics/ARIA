@@ -1,0 +1,11 @@
+algo_name: "mome_reproducibility"
+
+log_every: 100
+
+use_single_init_genotype: false
+
+pareto_front_max_length: 50
+
+weight_fitness_obj: null
+
+use_proba_fit: false

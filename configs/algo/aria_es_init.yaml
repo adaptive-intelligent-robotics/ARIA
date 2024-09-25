@@ -1,0 +1,7 @@
+algo_name: "aria_es_init"
+
+use_single_init_genotype: true
+
+weight_fitness_obj: null
+
+use_proba_fit: null

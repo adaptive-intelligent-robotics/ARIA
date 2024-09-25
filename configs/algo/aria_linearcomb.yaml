@@ -1,0 +1,9 @@
+algo_name: "aria_linearcomb"
+
+use_single_init_genotype: false
+
+weight_fitness_obj: ???
+
+use_proba_fit: null
+
+total_map_elites_evaluations: 2000000

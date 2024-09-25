@@ -1,0 +1,9 @@
+algo_name: "aria_mapelites_init"
+
+use_single_init_genotype: false
+
+weight_fitness_obj: null
+
+use_proba_fit: null
+
+total_map_elites_evaluations: 2000000

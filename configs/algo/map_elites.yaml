@@ -1,0 +1,9 @@
+algo_name: "map_elites"
+
+log_every: 100
+
+use_single_init_genotype: false
+
+weight_fitness_obj: null
+
+use_proba_fit: null
